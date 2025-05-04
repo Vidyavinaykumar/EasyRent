@@ -1,0 +1,71 @@
+<div class="container mt-4">
+  <h3>Edit House</h3>
+  <form (ngSubmit)="updateHouse()">
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input type="text" class="form-control" [(ngModel)]="house.title" name="title" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Location</label>
+      <input type="text" class="form-control" [(ngModel)]="house.location" name="location" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Price</label>
+      <input type="number" class="form-control" [(ngModel)]="house.price" name="price" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Description</label>
+      <textarea class="form-control" [(ngModel)]="house.description" name="description" rows="3" required></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Image URLs (comma separated)</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="house.image"
+        name="images"
+        placeholder="https://image1.jpg, https://image2.jpg"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-success">Update House</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <h3>{{ isEditMode ? 'Edit' : 'Add' }} House</h3>
+
+<form [formGroup]="houseForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label>Title</label>
+    <input formControlName="title" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label>Location</label>
+    <input formControlName="location" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label>Price</label>
+    <input type="number" formControlName="price" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label>Image URL</label>
+    <input formControlName="image" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label>Description</label>
+    <textarea formControlName="description" class="form-control"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Save</button>
+</form> -->

@@ -1,0 +1,27 @@
+<div class="container mt-4">
+    <h3>Your Wishlist</h3>
+    <div *ngIf="wishlist.length > 0; else empty">
+      <div class="row">
+        <div *ngFor="let house of wishlist" class="col-md-4">
+          <div class="card mb-4">
+            <img [src]="house.image[0]" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ house.title }}</h5>
+              <p class="card-text">{{ house.location }}</p>
+              <!-- <button class="btn btn-danger" (click)="remove(house.id)">
+                <i class="fas fa-trash-alt"></i> Book Now
+              </button> -->
+              <button class="btn btn-danger" (click)="remove(house.id)">
+                <i class="fas fa-trash-alt"></i> Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <ng-template #empty>
+      <p>You have no items in your wishlist.</p>
+    </ng-template>
+  </div>
+  

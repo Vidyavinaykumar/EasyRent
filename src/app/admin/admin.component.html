@@ -1,0 +1,22 @@
+<div>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark p-3">
+      <div class="container-fluid">
+      <a href="" class="navbar-brand"><i class="fas fa-home me-2"></i>EasyRent</a>
+          <ul class="navbar-nav d-flex justify-content-end">
+              <li class="nav-item"><a routerLink="/admin/dashboard" class="nav-link">Dashboard</a></li>
+              <li class="nav-item"><a routerLink="/admin/manage" class="nav-link">Manage house</a></li>
+              <!-- <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li> -->
+              <li class="nav-item"><a routerLink="/admin/add" class="nav-link">Add House</a></li>
+              <li class="nav-items"> <a routerLink=" " (click)="logOut()" class="nav-link">Logout</a></li>
+              <!-- <a class="nav-link" routerLink="/admin/add">Add House</a> -->
+
+              <!-- <li class="nav-item"><a routerLink="/admin/edit/:id" class="nav-link">Edit house</a></li> -->
+          </ul>
+      </div>  
+  </nav>
+</div>
+  
+  <div class="container mt-4">
+    <router-outlet></router-outlet>
+  </div>
+  

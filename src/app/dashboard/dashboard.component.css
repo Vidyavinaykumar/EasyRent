@@ -1,0 +1,17 @@
+.badge {
+    font-size: 0.95rem;
+    padding: 0.4em 0.7em;
+    border-radius: 0.5rem;
+  }
+  
+  .dashboard-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+  }
+  
+  .dashboard-info {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+  

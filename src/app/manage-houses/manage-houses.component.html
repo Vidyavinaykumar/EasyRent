@@ -1,0 +1,56 @@
+<div class="container mt-4">
+  <h3>Manage Houses</h3>
+  <table class="table table-bordered table-hover mt-3">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let house of houses">
+        <td>{{ house.id }}</td>
+        <td>{{ house.title }}</td>
+        <td>{{ house.location }}</td>
+        <td>₹{{ house.price }}</td>
+        <td>
+          <button class="btn btn-sm btn-primary me-2" (click)="editHouse(house.id)">Edit</button>
+          <button class="btn btn-sm btn-danger" (click)="deleteHouse(house.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<!-- <div class="d-flex justify-content-between mb-3">
+    <h3>Manage Houses</h3>
+    <button class="btn btn-success" (click)="onAdd()">+ Add New House</button>
+  </div> -->
+  
+  <!-- <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let house of houses">
+        <td>{{house.title}}</td>
+        <td>{{house.location}}</td>
+        <td>₹{{house.price}}</td>
+        <td>
+          <button class="btn btn-primary btn-sm me-2" (click)="onEdit(house.id)">Edit</button>
+          <button class="btn btn-danger btn-sm" (click)="onDelete(house.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table> -->
+  
