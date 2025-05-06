@@ -1,7 +1,9 @@
 # EasyRent
 Deployment link : https://easyrent-vinay.web.app/
+
 Admin Credentials : username : admin
                     password : admin123
+
 
 User Credentials : username : username
                     password : username(first 3 letter + @123 )
